@@ -1,7 +1,7 @@
 import random
 
 class Hangman:
-    def __init__(self, word_list, num_lives=None):
+    def __init__(self, word_list):
         self.word_list = word_list
         self.num_lives = 5
         self.word = random.choice(word_list)
@@ -25,7 +25,6 @@ class Hangman:
             print(f"You have {self.num_lives} lives left.")
 
     def ask_for_input(self):
-        print(self.word)
         guess = input("Please guess a letter: ")
         status = True
         while status == True:
