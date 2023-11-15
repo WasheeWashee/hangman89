@@ -42,4 +42,4 @@ class Hangman:
                     status = False
                     print(self.list_of_guesses)
             else:
-                guess = input("Invalid letter. Please, enter a single alphabetical char
+                guess = input("Invalid letter. Please, enter a single alphabetical character")
